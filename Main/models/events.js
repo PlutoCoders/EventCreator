@@ -1,4 +1,4 @@
-const { Model, Datatypes } = require(`sequalize`);
+const { Model, DataTypes } = require(`sequelize`);
 const sequelize = require('../config/connection');
 
 class Event extends Model {};
@@ -6,17 +6,17 @@ class Event extends Model {};
 Event.init({
 
     id: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.NUMBER,
         allowNull: false,
         primaryKey: true,
         autoIncrement: true,
         },
     title: {
-        type: Datatypes.STRING,
+        type: DataTypes.STRING,
         allowNull: false,
     },
     description: {
-        type: Datatypes.STRING,
+        type: DataTypes.STRING,
         allowNull: false,
     },
     event_date: {
@@ -25,14 +25,14 @@ Event.init({
         allowNull: false,
     },
     user_id: {
-        type: Datatypes.INTEGER,
+        type: DataTypes.NUMBER,
         references: {
             model: `user`,
             key: `id`,
         },
     },
 
-        sequelize,
+        sequelize: sequelize,
         timestamps: false,
         freezeTableName: true,
         underscored: true,
