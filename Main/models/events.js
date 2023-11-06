@@ -6,7 +6,7 @@ class Event extends Model {}
 Event.init(
   {
     id: {
-      type: DataTypes.NUMBER,
+      type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
       autoIncrement: true,
@@ -26,7 +26,7 @@ Event.init(
       allowNull: false,
     },
     user_id: {
-      type: DataTypes.NUMBER,
+      type: DataTypes.INTEGER,
       references: {
         model: `user`,
         key: `id`,
