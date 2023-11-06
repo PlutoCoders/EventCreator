@@ -3,12 +3,14 @@ const newFormHandler = async (event) =>{
 
     const title = document.querySelector('input[name="event-title"]').value;
     const description = document.querySelector('textarea[name="event-description"]').value;
+    //const date = document.querySelector('where the calander appears and what is selected').value;
   
     await fetch(`/api/post`, {
       method: 'POST',
       body: JSON.stringify({
         title,
         description,
+        //date
       }),
       headers: { 'Content-Type': 'application/json' },
     });
@@ -45,6 +47,7 @@ const upddateFormHandler = async (event) =>{
         body: JSON.stringify({
           title,
           description,
+          //date
         }),
         headers: { 'Content-Type': 'application/json' },
       });
