@@ -65,6 +65,18 @@ body {
     border-style: solid;
   }
 
+/* Text inside of an event card */
+  .EventDate {
+    text-decoration-line: underline;
+  }
+
+  .EventName {
+    font-size: 17px;
+    background-color: #94e6ff;
+  }
+  .EventCreator {
+    padding: 5px, 0px;
+  }
 .flex {
     display: flex;
 }
