@@ -21,7 +21,10 @@
 
   #### Use 
   - To run / test the application, one must have access to the MySQL Workbench DataBase, as well as run (node server.js) or (npm run start) in the terminal. CLI (Command Line Interface) to run this application!
-  - 
+  - You can also type npm run seedstart (to run a custom script located in the package.json which will not only run the code, but also seed the database)
+  - After you are done with your session, in the terminal you can press: ctrl c (to end it)
+
+
   ## Licensing
   [![License Badge: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
   #### 
@@ -61,12 +64,15 @@
   #### https://opensource.org/licenses/MIT
 
   ## Questions?
+  - Be sure to checkout the assets folder to see various images we have included of different parts of the website.
   
   #### Github Profile: [*PlutoCoders*](https://github.com/PlutoCoders)
+  #### Github Repo: 
+  https://github.com/PlutoCoders/EventCreator
 
   #### Contact us or ask us questions at:
-  #### [brandon-email-here](mailto:brandonellis.rivera@gmail.com)
-  #### [(Alex-Email-Here)](mailto:plutocoding@gmail.com)
+  #### [brandonellis.rivera@gmail.com](mailto:brandonellis.rivera@gmail.com)
+  #### [plutocoding@gmail.com](mailto:plutocoding@gmail.com)
   #### [furkdurk7@aol.com](mailto:furkdurk7@aol.com)
   
   
