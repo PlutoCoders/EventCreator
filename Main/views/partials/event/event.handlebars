@@ -1,0 +1,58 @@
+{{!-- <link rel="stylesheet" href="./event.css" /> --}}
+<style>
+    .card {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+    border-style: solid;
+    border-radius: 5px;
+    height: 200px;
+    width: 175px;
+    margin: 5px;
+    padding: 5px;
+    background-color: rgb(166, 231, 252);
+}
+
+.eventName {
+    height: 20px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.EventDescription {
+    background-color: #d5eaee;
+    padding: 10px;
+    height: 45px;
+}
+</style>
+<div class="eventCardContainer flex justify-center align-center">
+    {{#if events}}
+        {{#each events}}
+            <div class="card" id="eventCard-{{id}}">
+                <div class="eventTitleRow flex space-between align-center gap10">
+                    <h4 class="EventName">{{ title }}</h4>
+                    <button class="delete-event-button" id="delete-event-button-{{id}}-user-id-{{user_id}}">Delete</button>
+                </div>
+                <p class="EventDescription">{{ description }}</p>
+                <div class="EventDate">
+                    {{ event_date }}
+                </div>
+                <div class="EventCreator">
+                    {{ user.name }}
+                </div>
+            </div>
+    {{/each}}
+    {{else}}
+        <div class="card">
+            <h4 class="EventName">Event Name</h4>
+            <p class="EventDescription"> Event Description</p>
+            <div class="EventDate">
+                Date
+            </div>
+            <div class="EventCreator">
+                Creator
+            </div>
+        </div>
+    {{/if}}
+</div>

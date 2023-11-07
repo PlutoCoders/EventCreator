@@ -1,0 +1,25 @@
+.card {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+    border-style: solid;
+    border-radius: 5px;
+    height: 200px;
+    width: 175px;
+    margin: 5px;
+    padding: 5px;
+    background-color: rgb(166, 231, 252);
+}
+
+.eventName {
+    height: 20px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.EventDescription {
+    background-color: #d5eaee;
+    padding: 10px;
+    height: 45px;
+}
