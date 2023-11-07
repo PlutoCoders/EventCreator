@@ -36,7 +36,7 @@ router.delete('/:id', withAuth, async (req, res) => {
     });
 
     if (!eventData) {
-      res.status(404).json({ message: `Your Wrong` });
+      res.status(404).json({ message: `You're Wrong`, errorMessage: `Event not found` });
       return;
     }
     res.status(200).json(eventData);
