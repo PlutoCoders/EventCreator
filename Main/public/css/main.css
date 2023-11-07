@@ -1,3 +1,70 @@
+body {
+	background-image: linear-gradient(to bottom right, #45a3b9, yellow);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 750px;
+}
+/* Header Area */
+.display-flex.justify-space-between.align-center.p-2 {
+    align-content: center;
+    display: flex;
+    justify-content: space-around;
+    background-color: #86e1cc;
+  }
+/* Login/Register */
+  .container.container-fluid.mt-5 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 25px;
+  }
+  /* Login/Signup Forms */
+  .col-md-6 {
+    background-color: #98dbbf;
+    border-style: solid;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+  }
+/* Inside the Form */
+  .form-group {
+    margin: 5px;
+    padding: 5px;
+  }
+/* Even Creation Form */
+  #eventForm {
+    background: #80e5c4;
+    display: block;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin: 5px;
+    border-style: solid;
+    border-radius: 5px;
+  }
+
+  .formTitle {
+    font-size: 29px;
+    font-weight: bold;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    margin: 8px;
+  }
+
+  .pageTitle {
+    display: flex;
+    margin: 10px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: blanchedalmond;
+    text-align: center;
+    border: #140404;
+    border-style: solid;
+  }
+
 .flex {
     display: flex;
 }
