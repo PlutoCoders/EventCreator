@@ -13,7 +13,6 @@ router.get('/', async (req, res) => {
           },
         ],
       });
-      res.status(200).json(eventData)
   
       // Serialize data so the template can read it
       const events = eventData.map((event) => event.get({ plain: true }));
@@ -51,7 +50,7 @@ router.get('/', async (req, res) => {
       const user = userData.get({ plain: true });
 
       res.render('profile', {
-        // ...user,
+         ...user,
         user: user,
         logged_in: true
       });

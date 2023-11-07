@@ -65,7 +65,7 @@ const upddateFormHandler = async (event) =>{
   let eventForm = document.querySelector('.neweventform');
   if (eventForm) eventForm.addEventListener('submit', newFormHandler);
 
-  let eventList = document.querySelector('.eventlist');
+  let eventList = document.querySelector('.delete-event-button');
   if (eventList) eventList.addEventListener('click', delFormHandler);
 
   let updateEventForm = document.querySelector('#updateeventform');
