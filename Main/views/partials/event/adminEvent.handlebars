@@ -35,19 +35,18 @@
 }
 
 </style>
+
 <div class="eventCardContainer flex justify-center align-center" class="specialEventArea">
     {{#if events.length}}
         {{#each events as |event|}}
             <div class="card" id="eventCard-{{id}}">
                 <div class="eventTitleRow flex justify-center align-center gap10">
-                    <h4 class="EventName">{{ event.title }}</h4>
-                    {{!-- {{#if user.name}}
-                        <button class="delete-event-button" id="delete-event-button-{{id}}-user-id-{{user_id}}">Delete</button>
-                    {{/if}} --}}
+                    <h4 class="EventName">{{ title }}</h4>
+                    <button class="delete-event-button" data-id="{{id}}">Delete</button>
                 </div>
-                <p class="EventDescription">{{ event.description }}</p>
+                <p class="EventDescription">{{ description }}</p>
                 <div class="EventDate">
-                    {{ event.event_date }}
+                    {{ event_date }}
                 </div>
                 <div class="EventCreator">
                     {{ name }}
@@ -55,15 +54,6 @@
             </div>
     {{/each}}
     {{else}}
-        <div class="card">
-            <h4 class="EventName">Event Name</h4>
-            <p class="EventDescription"> Event Description</p>
-            <div class="EventDate">
-                Date
-            </div>
-            <div class="EventCreator">
-                Creator
-            </div>
-        </div>
+
     {{/if}}
 </div>
