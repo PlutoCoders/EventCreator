@@ -42,7 +42,6 @@
             <div class="card" id="eventCard-{{id}}">
                 <div class="eventTitleRow flex justify-center align-center gap10">
                     <h4 class="EventName">{{ title }}</h4>
-                    <button class="delete-event-button" data-id="{{id}}">Delete</button>
                 </div>
                 <p class="EventDescription">{{ description }}</p>
                 <div class="EventDate">
@@ -51,6 +50,7 @@
                 <div class="EventCreator">
                     {{ name }}
                 </div>
+                <button class="delete-event-button" data-id="{{id}}">Delete</button>
             </div>
     {{/each}}
     {{else}}

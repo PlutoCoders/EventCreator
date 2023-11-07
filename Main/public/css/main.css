@@ -120,3 +120,43 @@ body {
   background-color: #04AA6D; /* Green */
   color: white;
 }
+
+.delete-event-button, #logout {
+  background-color: #f17559;
+  border-radius: 5px;
+  color: azure;
+  padding: 4px;
+}
+
+.delete-event-button:hover {
+  background-color: grey;
+  transition: .9s;
+}
+
+#logout:hover {
+  background-color: rgb(59, 59, 59);
+  transition: .6s;
+}
+
+.yesBTN {
+  background-color: #6bf472;
+  border-radius: 5px;
+  color: rgb(12, 12, 12);
+  padding: 4px;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.yesBTN:hover {
+  background-color: rgb(255, 255, 255);
+  transition: .6s;
+}
+
+.btn.btn-primary {
+  background-color: #6bf4e7;
+  border-radius: 5px;
+  color: rgb(12, 12, 12);
+  padding: 4px;
+  min-width: 120px;
+  font-weight: bold;
+}
