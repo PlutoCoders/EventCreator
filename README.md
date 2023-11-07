@@ -1,62 +1,72 @@
 
-  # Event Creator
+  # Event Viewer/Planner
 
-  ### Basic Concept:
-  - Login to be able to access your profile.
-  - Access your profile to view your events and the event creator form
-  - Create an event
-  - Delete your own events
+  [![License Badge: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-  [![License Badge: M](https://img.shields.io/badge/License-M-blue.svg)](https://opensource.org/license/mit/)
+  Allows users to view any set events, and logged in users can create/delete their own events, as well as view more information about other existing events.
 
-  ### How the Event Creator Works
-  - The user gets to our webpage. they are then presented with a (Log in) page. 
-  - Beneath the log in page we are given a few events which are not detailed with descriptions or dates (for personal safety and privacy). 
-  - Logging into the page will cause you to be redirected to the logged in screen where you will now have acess to the descriptions and date times of each event created by other users. 
-  - Following this, you can see at the top right on the header-bar, the user will be presented with a (profile) button. 
-  - This button will allow the user to view their own profile as well as give them the ability to create their own events. 
-  - In this (create your own event) box you will be asked about the event title, the event description, and finally the event date. 
-  - The right portion of the screen will be where the events created by (you) the user will be stored.
+  [Preview Application](https://media.istockphoto.com/id/460423127/photo/tire-swing-hanging-from-tree-on-sunny-day.jpg?s=612x612&w=0&k=20&c=E3yxlF_IK2jj43JSN4M8NIyH3VW0kvtwzF0g59hrQSY=)
 
-  ## Table of Contents
-
-  [Installation](#installation)
-
-  [Usage](#usage)
-
-  [Questions](#questions)
-
-  [Credits](#credits)
-
-  [License](#license)
+  ## Table of Contents  
+  * [Installation](#installation)  
+  * [Usage](#usage) 
+  * [Licensing](#licensing)
+  * [Questions](#questions)
 
   ## Installation
-  ### Run the command Requires (NPM INSTALL) to Install
+  #### Run the command NPM Install to Install!
+  
+  ## Usage
+  #### Use Node.js CLI (Command Line Interface) to run this Application.
 
-  # Usage 
   #### Use 
   - To run / test the application, one must have access to the MySQL Workbench DataBase, as well as run (node server.js) or (npm run start) in the terminal. CLI (Command Line Interface) to run this application!
-  - You can also seed the data base, as well as run the application by using the custom command (located in package.json). (npm run seedstart)
-  - You can then open your browser and type in "http://localhost:3001/" to connect
-  - If you need to stop running the application, you can press ctrl c in the terminal
-
+  - 
   ## Licensing
-  [![License Badge: M](https://img.shields.io/badge/License-M-blue.svg)](https://opensource.org/license/mit/)
+  [![License Badge: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+  #### 
+      MIT License
+
+      Copyright (C) 2012-2020 by various contributors (see AUTHORS)
+
+      Permission is hereby granted, free of charge, to any person obtaining a copy
+      of this software and associated documentation files (the "Software"), to deal
+      in the Software without restriction, including without limitation the rights
+      to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+      copies of the Software, and to permit persons to whom the Software is
+      furnished to do so, subject to the following conditions:
+
+      The above copyright notice and this permission notice shall be included in
+      all copies or substantial portions of the Software.
+
+      THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+      IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+      FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+      AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+      LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+      OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+      THE SOFTWARE.
+      
+      Copyright 1998 by the Massachusetts Institute of Technology.
+
+      Permission to use, copy, modify, and distribute this software and its
+      documentation for any purpose and without fee is hereby granted, provided that
+      the above copyright notice appear in all copies and that both that copyright
+      notice and this permission notice appear in supporting documentation, and that
+      the name of M.I.T. not be used in advertising or publicity pertaining to
+      distribution of the software without specific, written prior permission.
+      M.I.T. makes no representations about the suitability of this software for any
+      purpose.  It is provided "as is" without express or implied warranty.
   
-  #### https://opensource.org/license/mit/
+  #### https://opensource.org/licenses/MIT
 
   ## Questions?
   
   #### Github Profile: [*PlutoCoders*](https://github.com/PlutoCoders)
-  #### Repo Link:
-  - https://github.com/PlutoCoders/EventCreator
-
 
   #### Contact us or ask us questions at:
-  #### [brandonellis.rivera@gmail.com](mailto:brandonellis.rivera@gmail.com)
-  #### [plutocoding@gmail.com](mailto:plutocoding@gmail.com)
+  #### [brandon-email-here](mailto:brandonellis.rivera@gmail.com)
+  #### [(Alex-Email-Here)](mailto:plutocoding@gmail.com)
   #### [furkdurk7@aol.com](mailto:furkdurk7@aol.com)
   
-
-  # Google Slides Link
-  - https://docs.google.com/presentation/d/1mN8FLedGggsDsWxWzvHwN4lyol230MnamzeMCdUodD4/edit?usp=sharing
+  
