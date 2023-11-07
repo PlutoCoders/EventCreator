@@ -25,10 +25,20 @@
     padding: 10px;
     height: 45px;
 }
+
+.container.container-fluid.mt-5 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 25px;
+  flex-direction: column;
+}
+
 </style>
-<div class="eventCardContainer flex justify-center align-center">
-    {{#if events}}
-        {{#each events}}
+
+<div class="eventCardContainer flex justify-center align-center" class="specialEventArea">
+    {{#if events.length}}
+        {{#each events as |event|}}
             <div class="card" id="eventCard-{{id}}">
                 <div class="eventTitleRow flex justify-center align-center gap10">
                     <h4 class="EventName">{{ title }}</h4>
