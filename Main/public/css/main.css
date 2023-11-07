@@ -77,6 +77,15 @@ body {
   .EventCreator {
     padding: 5px, 0px;
   }
+
+  .profilePage {
+    max-width: 295px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
 .flex {
     display: flex;
 }
@@ -101,4 +110,13 @@ body {
 }
 .gap15 {
     grid-gap: 15px;
+}
+
+.button {
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: #04AA6D; /* Green */
+  color: white;
 }
