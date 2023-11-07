@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const { Event, User } = require('../models');
-//const withAuth = require(`../utils/auth`);
+const withAuth = require(`../utils/auth`);
 
 router.get('/', async (req, res) => {
     try {
@@ -13,14 +13,16 @@ router.get('/', async (req, res) => {
           },
         ],
       });
+      res.status(200).json(eventData)
   
       // Serialize data so the template can read it
-      const events= eventData.map((event) => event.get({ plain: true }));
+      const events = eventData.map((event) => event.get({ plain: true }));
+      console.log(events)
   
       // Pass serialized data and session flag into template
       res.render('homepage', { 
         events, 
-        logged_in: req.session.logged_in 
+        //logged_in: req.session.logged_in, 
       });
     } catch (err) {
       res.status(500).json(err);

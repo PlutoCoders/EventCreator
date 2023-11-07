@@ -47,7 +47,7 @@ const upddateFormHandler = async (event) =>{
         body: JSON.stringify({
           title,
           description,
-          //date
+          date
         }),
         headers: { 'Content-Type': 'application/json' },
       });
