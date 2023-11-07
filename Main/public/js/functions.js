@@ -1,6 +1,6 @@
 const getEvent = async (id) => {
     console.log(`Get this event`, id);
-    let frontEndFromServer = await fetch(`http://localhost:3306/api/events/${id}`, {
+    let frontEndFromServer = await fetch(`http://localhost:3001/api/events/${id}`, {
         method: `GET`,
         headers: {
             'Content-Type': 'application/json'
@@ -12,22 +12,22 @@ const getEvent = async (id) => {
         console.log(`Event to Get`, eventToGet);
         return eventToGet;
     } else {
-        console.log(`Could not find event`);
+        console.log(`Could not get event`);
     }
 }
 
 const deleteEvent = async (id) => {
     console.log(`Delete this event`, id);
-    let frontEndFromServer = await fetch(`http://localhost:3306/api/events/${id}`, {
+    let frontEndFromServer = await fetch(`http://localhost:3001/api/events/${id}`, {
         method: `DELETE`,
     });
 
     if (frontEndFromServer.ok) {
-        let eventToDelete = await frontEndFromServer.json();
-        console.log(`Event to Delete`, eventToDelete);
-        return eventToDelete;
+        // let eventToDelete = await frontEndFromServer.json();
+        console.log(`Event successfully Deleted`);
+        // return eventToDelete;
     } else {
-        console.log(`Could not find event`);
+        console.log(`Could not delete event`);
     }
 }
 
@@ -37,6 +37,6 @@ deleteEventButtons.forEach(btn => {
         let extractedEventIDFromEvent = parseInt(deleteEventButtonClickEvent.target.id.split(`-`)[3]);
         // let extractedUserIDFromEvent = parseInt(deleteEventButtonClickEvent.target.id.split(`-`)[6]);
         getEvent(extractedEventIDFromEvent);
-        // deleteEvent(extractedEventIDFromEvent);
+        deleteEvent(extractedEventIDFromEvent);
     })
 })

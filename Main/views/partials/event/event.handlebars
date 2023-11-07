@@ -30,9 +30,11 @@
     {{#if events}}
         {{#each events}}
             <div class="card" id="eventCard-{{id}}">
-                <div class="eventTitleRow flex space-between align-center gap10">
+                <div class="eventTitleRow flex justify-center align-center gap10">
                     <h4 class="EventName">{{ title }}</h4>
-                    <button class="delete-event-button" id="delete-event-button-{{id}}-user-id-{{user_id}}">Delete</button>
+                    {{!-- {{#if user.name}}
+                        <button class="delete-event-button" id="delete-event-button-{{id}}-user-id-{{user_id}}">Delete</button>
+                    {{/if}} --}}
                 </div>
                 <p class="EventDescription">{{ description }}</p>
                 <div class="EventDate">
