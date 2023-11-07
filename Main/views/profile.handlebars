@@ -1,2 +1,14 @@
 {{ user.name }}'s Profile Page
+
+<form action="submit" class="eventForm neweventform" id="eventForm">
+    <p>Title: <input type="text" name="event-title" id="eventTitleField" placeholder="Enter Event Title..."></p>
+    <p>Description: <input type="text" name="event-description" id="eventDescription" placeholder="Enter Event Description..."></p>
+    <p>Date: <input type="text" id="datepicker" placeholder="Enter Event Date..."></p>
+    <button type="submit">Submit</button>
+</form>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<!-- Include jQuery UI -->
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="./js/profile.js"></script>
