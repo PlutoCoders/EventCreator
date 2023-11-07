@@ -1,3 +1,15 @@
+body {
+	background-image: linear-gradient(to bottom right, #45a3b9, yellow);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.display-flex.justify-space-between.align-center.p-2 {
+    align-content: center;
+    display: flex;
+    justify-content: space-around;
+  }
+
 .flex {
     display: flex;
 }
