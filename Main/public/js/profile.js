@@ -2,21 +2,23 @@ const newFormHandler = async (event) =>{
     event.preventDefault();
 
     const title = document.querySelector('input[name="event-title"]').value;
-    const description = document.querySelector('textarea[name="event-description"]').value;
-    //const date = document.querySelector('where the calander appears and what is selected').value;
+    const description = document.querySelector('input[name="event-description"]').value;
+    const date = document.querySelector('#datepicker').value;
   
-    await fetch(`/api/post`, {
+    const response = await fetch(`/api/post`, {
       method: 'POST',
       body: JSON.stringify({
         title,
         description,
-        //date
+        date
       }),
       headers: { 'Content-Type': 'application/json' },
     });
   
     if (response.ok) {
+      const eventToCreate = await response.json();
         document.location.replace('/');
+        return eventToCreate;
       } else {
         alert('Failed to create event');
       }
@@ -60,14 +62,21 @@ const upddateFormHandler = async (event) =>{
     }
 };
 
-document
-  .querySelector('.neweventform')
-  .addEventListener('submit', newFormHandler);
+  let eventForm = document.querySelector('.neweventform');
+  if (eventForm) eventForm.addEventListener('submit', newFormHandler);
 
-  document
-  .querySelector('.eventlist')
-  .addEventListener('click', delFormHandler);
+  let eventList = document.querySelector('.eventlist');
+  if (eventList) eventList.addEventListener('click', delFormHandler);
 
-  document
-  .querySelector('#updateeventform')
-  .addEventListener('submit', upddateFormHandler);
+  let updateEventForm = document.querySelector('#updateeventform');
+  if (updateEventForm) updateEventForm.addEventListener('submit', upddateFormHandler);
+
+  $(document).ready(function() {
+    console.log(`Ready`);
+    $('#datepicker').datepicker({
+      dateFormat: 'yy-mm-dd', // Set the date format
+      minDate: 0,             // Allow only future dates
+      maxDate: '+1M',         // Allow dates within the next month
+      showButtonPanel: true   // Show "Today" and "Done" buttons
+    });
+  });
