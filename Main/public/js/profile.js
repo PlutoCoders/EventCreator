@@ -3,14 +3,14 @@ const newFormHandler = async (event) =>{
 
     const title = document.querySelector('input[name="event-title"]').value;
     const description = document.querySelector('input[name="event-description"]').value;
-    const date = document.querySelector('#datepicker').value;
+    const event_date = document.querySelector('#datepicker').value;
   
-    const response = await fetch(`/api/post`, {
+    const response = await fetch(`/api/events/post`, {
       method: 'POST',
       body: JSON.stringify({
         title,
         description,
-        date
+        event_date
       }),
       headers: { 'Content-Type': 'application/json' },
     });
