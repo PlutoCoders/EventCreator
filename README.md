@@ -69,6 +69,8 @@
   #### Github Profile: [*PlutoCoders*](https://github.com/PlutoCoders)
   #### Github Repo: 
   https://github.com/PlutoCoders/EventCreator
+  #### Check out the Slideshow!
+  https://docs.google.com/presentation/d/1mN8FLedGggsDsWxWzvHwN4lyol230MnamzeMCdUodD4/edit?usp=sharing
   #### Connect to the Heroku App
   https://eventcreatorproject2-ccc7e1fe4142.herokuapp.com/
 
