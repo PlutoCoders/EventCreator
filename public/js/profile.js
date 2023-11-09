@@ -76,7 +76,7 @@ const upddateFormHandler = async (event) =>{
     $('#datepicker').datepicker({
       dateFormat: 'yy-mm-dd', // Set the date format
       minDate: 0,             // Allow only future dates
-      maxDate: '+1M',         // Allow dates within the next month
+      // maxDate: '+1M',         // Allow dates within the next month
       showButtonPanel: true   // Show "Today" and "Done" buttons
     });
   });
